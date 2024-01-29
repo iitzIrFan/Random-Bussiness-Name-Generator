@@ -18,3 +18,8 @@ let para = document.createElement('p')
 para.innerHTML = `Your Business Name:<br>${first[rrandomfirst]}  ${second[rrandomsecond]}  ${third[rrandomthird]}`;outputcontainer.appendChild(para)
 
 }
+
+// Disable context menu on the entire document
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
